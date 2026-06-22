@@ -1,0 +1,24 @@
+zamiana = "Ala ma kota".replace("kota", "misia")
+duze_znaki = zamiana.upper().lower().capitalize().title() # nadpisywanie modyfikacji
+print(duze_znaki)
+szukanie = zamiana.find("Ala")
+print(szukanie)
+
+tekst_CSV = "03/22/2025 jan KOWalski wypłata PLN: 8359"
+dzien = tekst_CSV[3:5]
+miesiac = tekst_CSV[0:2]
+rok = tekst_CSV[6:10]
+print(dzien,"-", miesiac,"-", rok)
+
+imie_nazwisko = tekst_CSV[11:23]
+print(imie_nazwisko.title())
+
+#szukanie = tekst_CSV.find(":")
+#print(szukanie)
+wyplata = tekst_CSV[37:]
+print("PLN:", wyplata)
+
+wyplata_EUR=float(wyplata)/4.33
+print("EUR:", f"{wyplata_EUR:.2f}")
+
+print(tekst_CSV.replace("jan", "marek").replace("KOWalski", "pięKNy").replace("8359", "10999.76"))
